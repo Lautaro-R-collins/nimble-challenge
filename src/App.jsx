@@ -1,7 +1,9 @@
 function App() {
   return (
     <>
-      <h1>Nimble Challenge</h1>
+      <h1 className="text-3xl font-bold underline">
+        Nimble Challenge
+      </h1>
     </>
   )
 }
