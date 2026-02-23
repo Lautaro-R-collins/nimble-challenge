@@ -1,16 +1,56 @@
-# React + Vite
+# Desafío Técnico - Nimble Gravity
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Este repositorio contiene la resolución del desafío técnico para el puesto de Fullstack Developer en Nimble Gravity
 
-Currently, two official plugins are available:
+## Stack Tecnológico
+El proyecto fue desarrollado utilizando las siguientes tecnologías:
+- **React 19**
+- **Vite**
+- **Tailwind CSS v4**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Estructura del Proyecto
+El código fuente ha sido organizado de manera modular para asegurar mantenibilidad y escalabilidad:
 
-## React Compiler
+- `src/services/api.js`: Servicio centralizado para interacciones con la API, que incluye un manejo robusto de errores y gestión de peticiones.
+- `src/components/common/`: Componentes de interfaz reutilizables como indicadores de Carga (Loading) y Error.
+- `src/components/layout/`: Componentes estructurales de la aplicación, como el Encabezado (Header) y el Pie de página (Footer).
+- `src/components/jobs/`: Componentes de lógica de negocio relacionados con el listado de empleos y postulaciones.
+- `.env`: Configuración de variables de entorno para la gestión de la URL de la API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Configuración e Instalación
 
-## Expanding the ESLint configuration
+### Prerrequisitos
+- Node.js (v18 o superior recomendado)
+- npm o yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Instalación
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Lautaro-R-collins/nimble-challenge.git
+   ```
+2. Navegar al directorio del proyecto:
+   ```bash
+   cd nimble-challenge
+   ```
+3. Instalar las dependencias:
+   ```bash
+   npm install
+   ```
+
+### Ejecutar el Proyecto
+Para iniciar el servidor de desarrollo localmente:
+```bash
+npm run dev
+```
+
+Para generar la versión de producción:
+```bash
+npm run build
+```
+
+## Características
+- Obtención dinámica de datos del candidato y listado de empleos.
+- Manejo robusto de errores para respuestas de API (tanto JSON como no-JSON).
+- Configuración basada en variables de entorno.
+- Arquitectura de componentes simplificada y modular.
