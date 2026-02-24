@@ -15,7 +15,8 @@ export function Header({ candidate }) {
           </div>
           <div className="text-left">
             <p className="text-sm font-medium text-gray-500 dark:text-gray-400 leading-none mb-1">CANDIDATO</p>
-            <p className="text-lg font-bold text-gray-900 dark:text-white">{candidate.firstName} {candidate.lastName}</p>
+            <p className="text-lg font-bold text-gray-900 dark:text-white leading-tight">{candidate.firstName} {candidate.lastName}</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">{candidate.email}</p>
           </div>
         </div>
       )}
