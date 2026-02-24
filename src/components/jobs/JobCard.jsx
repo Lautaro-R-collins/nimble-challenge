@@ -43,7 +43,7 @@ export function JobCard({ job, candidate, defaultRepoUrl }) {
         <p className="text-green-700 dark:text-green-300">Éxito para {job.title}</p>
         <button 
           onClick={() => setStatus('idle')}
-          className="mt-4 text-green-600 dark:text-green-400 font-semibold hover:underline"
+          className="mt-4 cursor-pointer text-green-600 dark:text-green-400 font-semibold hover:underline"
         >
           Postular a otra posición
         </button>
