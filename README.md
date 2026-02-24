@@ -3,6 +3,8 @@
 ## Descripción
 Este repositorio contiene la resolución del desafío técnico para el puesto de Fullstack Developer en Nimble Gravity
 
+Demo: https://nimble-challenge-self.vercel.app
+
 ## Stack Tecnológico
 El proyecto fue desarrollado utilizando las siguientes tecnologías:
 - **React 19**
